@@ -21,7 +21,14 @@ Dagens speciella lärdom för mig brukar ofta vara något som inte direkt var re
 Kmom02
 -------------------------
 
-Här är redovisningstexten
+Det här kursavsnittet var inte jätteomfattande, men ändå ”lönnsvårt” såsom att överföra gissa-spelet i ramverket. Det var inget som borde orsaka några större komplikationer, inga nya koncept att fatta, men det var ändå lite klurigt att hitta rätt bland alla mappar och filer i Anax och att inte glömma någon detalj. Videorna var bra (även om de inte riktigt stämde med aktuell version av Anax). Det som skapade mest förvirring innan jag fick klart för mig var att ”return true” under inga omständigheter kunde tas bort om routen skulle funka ordentligt.
+
+Det här med att skriva kod utanför och innanför ramverket känns inte helt obekant numera, eftersom vi har viss vana från express. Principiellt bör man väl ha all kod om möjligt inom ramverket så vet man att allt ligger på sin plats. Nackdelen kan väl vara om man har förhållandevis lite logik och innehåll på en sida och då ändå behöva dela upp den.
+
+Det där med UML-modellering känns som en tröskel, svår att komma över, men har man väl gjort sig besvären med att konstruera snygga klassdiagram är det nästan bara att tuta och köra sen. Smart med phpDocumentator och make doc att man på det viset i efterhand kan få en överblick på kodstrukturen. Särskilt om man behövt modifiera klasserna i efterhand, så man inte behöver göra om modelleringen igen från början eller hålla sig till felaktiga modeller i sin dokumentation.
+
+Today I learnt det smarta sättet att ”byta ut” bilder via css genom att egentligen bara zooma in olika delar av en och samma bild som i tärningsspelet. Smart!
+
 
 
 
