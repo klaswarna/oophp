@@ -10,8 +10,8 @@ body {
     margin: 0;
     background-color: #fff;
     word-wrap: break-word;
-
 }
+
 
 .outer-wrap {
     margin: 0 auto;
@@ -42,8 +42,8 @@ body {
 
 .inner-wrap-header {
     max-width: 100%;
-
 }
+
 
 .header-logo {
     position: relative;
@@ -80,7 +80,8 @@ body {
  */
 .outer-wrap-main {
     min-height: 20em;
-    /*margin-bottom: 4em;*/
+
+    /* margin-bottom: 4em; */
     background-color: #fff;
     background-image: linear-gradient(#fff, #bbb);
     padding-bottom: 1em;
@@ -97,7 +98,6 @@ body {
 h1 {
     font-size: 2.5em;
 }
-
 
 
 /**
@@ -124,27 +124,28 @@ h1 {
 
 
 .right {
-        float: right;
-        margin-left: 8px;
-    }
+    float: right;
+    margin-left: 8px;
+}
 
 figcaption {
     font-size: 0.8em;
     font-style: italic;
 }
 
-navbar.navbar a {
+.navbar a {
     padding: 1.5em;
     text-decoration: none;
     font-family: sans-serif;
 }
 
-navbar.navbar a:hover {
+.navbar a:hover {
     background-color: #888;
     -webkit-transition: background-color 0.7s;
     transition: background-color 0.7s;
 }
-navbar.navbar a.selected {
+
+.navbar a.selected {
     background-color: #888;
 }
 
