@@ -35,7 +35,30 @@ Today I learnt det smarta sättet att ”byta ut” bilder via css genom att ege
 Kmom03
 -------------------------
 
-Här är redovisningstexten
+Att testa kod med annan kod är inget jag har brukat göra hittils men det är inte helt nytt eftersom vi gjorde det litegrand i en av python-kurserna.
+
+Jag begriper intellektuellt att det verkar vettigt, men har ännu inte uppnåt den nivån då det har praktisk nytta (med det menar jag att mina program är för enkla och fulkodade för att tidsvinsten och säkerheten med enhetstestning skall vara mätbar. Men i takt med att mitt kodande förhoppningsvis utvecklas, kommer behovet av att testa det systematiskt också göra det, varför det är bra att komma in i det tänket så snart som möjligt.
+
+Lite begrepp att reda ut:
+
+White box testing innebär att man som testare har tillgång till källkoden av ett programavsnitt och testar att den inre strukturen av dito fungerar och agerar som förväntat.
+
+Vid black box testing behöver testaren emellertid inte ha tillgång till källkoden utan bara känna till de publika gränssnitten och testa att programmet fungerar i det avseendet, d.v.s. att med rätt värden in så skall rätt värden ut genereras, hur det sker internt behöver och kan man inte bry sig om.
+
+Grey box testing är ett mellanting mellan det två ovanstående.
+
+Vid positiva tester skapar man testfall som man vill ska fungera och ge ett visst resultat. Man kan också skapa negativa tester, varvid man vill att ett program inte skall fungera vid givna indata, kanske för att testa om exceptions kastas t.ex. eller helt enkelt för att testa att vid givet läge skall utfallet INTE bli av ett visst slag.
+
+Tärninggspelet var en mycket tuff uppgift, för det är svårt att lära sig nya saker och vara kreativ med dem på samma gång och dessutom behöva uppfylla massa specifika krav i HUR det skall programmeras (t.ex. i det här fallet ”minimal kod i routern”).
+
+Jag tänkte först börja programmera lite improviserat, använda mig av tidigare gjorda kodsnuttar i kursen och justera efterhand. Jag insåg snart att det inte vore en bra lösning, varpå jag istället började med att konstruera klasser i uml-diagram, från mindre till större. Jag skapade en tärningsklass, en för tärningshand, spelrunda, spelare och spelbord, där alla komponerats av tidigare klasser. Förhållandena mellan Spelrunda och Spelare kändes inte helt optimerat så jag strök spelrunda-klassen.
+
+Sen fick klassen Spelbord sköta all logik. För att spara information mellan sidomladdningarna skickas en Spelbord-instans med i SESSION liksom två instanser av Spelare som Spelbord är beroende av. De val som dator eller människa gör vid varje drag skickas med en POST-variabel.
+Datorn är så pass intelligent att om den har t.ex. 90 poäng och får 12 poäng väljer den att stanna framför att försöka igen. I övrigt styrs dess beslut enbart av slumpen. Vill man ha fler än 5 tärningar är det bara att ändra en parameter i rad 32 i Spelare.php. Jag hann emellertid inte lägga in detta som ett val i själva användargränssnittet.
+
+Jag lyckades få 100% kodtäckning när jag enhetstestade tärningsspelet, MEN det blir inte alltid så eftersom slumpen spelar in. Olika utfall på tärningarna samt datorns AI-val påverkar. Jag har därför ibland gjort flera liknande test efter varandra som kan ge olika utfall och ökar sannolikheten för att all kod testas. Så testa flera gånger och ha tur (bifogade en bild i doc/ som visar att jag faktiskt uppnådde 100% vid ett tillfälle).
+
+Om jag måste nämna en TIL för detta kmom kan det kanske vara att man måste tänka på att inte bara skicka med ett objekt i SESSION utan även de objekt som det förra innehåller om så är fallet.
 
 
 

@@ -38,4 +38,9 @@ return [
         "url" => "gissa",
         "title" => "Gissa | Objektorienterad PHP",
     ],
+    [
+        "text" => "Tärningsspel100",
+        "url" => "tarningsspel100/spelplan",
+        "title" => "Tärningsspel | Objektorienterad PHP",
+    ],
 ];
