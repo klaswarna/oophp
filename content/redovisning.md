@@ -65,7 +65,16 @@ Om jag måste nämna en TIL för detta kmom kan det kanske vara att man måste t
 Kmom04
 -------------------------
 
-Här är redovisningstexten
+Trait verkar praktiskt när man inte kan ärva från flera klasser. Begreppet interface kändes lite ”varför då?” i början, men efterhand som man blir mer strukturerad i sitt programmerande kan det nog ha sin plats om inte annat som ett slags ritning, eller specifikation för hur kompatibla klasser skall konstrueras.
+
+Datorns intelligens i tärningsspelet ökade ytterligare litet. Tidigare fattade datorn bara att stanna om omgångens poäng plus tidigare totalpoäng överskridit 100, men fr.o.m. nu väljer den att 1) alltid försöka igen om omgångens poäng var mindre än 15 (d.v.s. litet att förlora), 2) alltid stanna om den har minst 50 poäng mer än motståndaren (smart att vara försiktig då).
+
+I mitt fall gjorde användandet av ramverkets get, post o.s.v. det ingen större skillnad då jag redan hanterade alla post och session endast i routern och inte i enskilda klasser. När man väl kommit in i ramverkets struktur är det naturligtvis smidigare att använda sig av ramverkets funktioner i så stor utsträcknings som möjligt. Det hela påminner lite om hur vi programmer i express och mithril.
+
+Förra kursmomentet hade jag mycket jox med make test inne i ramverket, men denna gång handlade det bara om att lägga till ytterligare en enstaka testklass med några testfunktioner, och jag fick hög kodtäckning även nu. Ibland 100%, men eftersom vissa testklasser är beroende på klassernas inneboende slump blir det ibland några procent mindre. Kanske korkade test av mig, men good enough i nuläget anser jag. Ibland gör jag medvetna test som skall faila eftersom de ger så komplexa returvärden som blir jobbiga att jämföra med någon av de testmetoder i phpunit som jag begripit såhär långt.
+
+Dagens til är att om man skall förlänga en array med en annan array i PHP med array_push så måste man skriva … framför arrayen man vill utöka med. (märklig konstruktion i php!?!)
+
 
 
 
