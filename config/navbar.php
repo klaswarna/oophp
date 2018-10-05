@@ -43,4 +43,10 @@ return [
         "url" => "tarningsspel100/spelplan",
         "title" => "Tärningsspel | Objektorienterad PHP",
     ],
+    [
+        "text" => "Movie",
+        "url" => "movie/index",
+        "title" => "Filmdatabas | Objektorienterad PHP",
+    ],
+
 ];

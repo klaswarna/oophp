@@ -81,7 +81,16 @@ Dagens til är att om man skall förlänga en array med en annan array i PHP med
 Kmom05
 -------------------------
 
-Här är redovisningstexten
+PDO-övningen denna gång var en litet annorlunda övning. Det var snarare ett litteraturstudium än en övning, men det var tydligt och pedagogiskt och lärorikt.
+
+Det gick lite sådär att få in koden i ramverket. Det är svårt att orientera sig i det. Tillsynes samma filer ligger i tillsynes likadana strukturer på flera ställen i ramverket utan att man har riktigt koll på var, hur och varför.
+
+En sak som jag hade särskilda bekymmer med var att veta och kontrollera hur långt ut i ”working directory” man befann sig. En viss länk funkade i ett visst läge, men inte om den importerades i en annan fil. Jag kom endast runt det med fullösningar denna gång. Detsamma gäller redirectande i största allmänhet.
+
+Jag gjorde endast basstrukturen i filmdatabasen, men försökte få den användarvänlig i alla fall. Koden blev inte särskilt snygg heller. Men i sammanhanget handlade det för mig om att fatta principerna, få det att funka och bli klar. Snyggare och effektivare kod får det förhoppningsvis bli på slutuppgiften, då vi har lite mer tid på oss. För att bortförklara mig ytterligare, måste jag tillägga att jag varit sjuk i veckan och under två dagar var jag minimalt produktiv, men jag har – peppar, peppar - inte varit sjuk annars sedan jag påbörjade programmeringsstudierna förra hösten.
+
+Dagens til: hur man kan logga in på studentservern med ”dbwebb login” som betyder samma som ”ssh studentakronym@bth.och.så.vidare”
+
 
 
 

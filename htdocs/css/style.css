@@ -162,3 +162,9 @@ figcaption {
     left: 30%;
     font-size: 3em;
 }
+
+/* kopierad från movie-exemplet */
+img.thumb {
+    max-width: 100px;
+    max-height: 100px;
+}
