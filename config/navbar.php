@@ -48,5 +48,14 @@ return [
         "url" => "movie/index",
         "title" => "Filmdatabas | Objektorienterad PHP",
     ],
-
+    [
+        "text" => "Filter-test",
+        "url" => "textfilter/parseTester",
+        "title" => "Testsida Filter | Objektorienterad PHP",
+    ],
+    [
+        "text" => "Content-databas",
+        "url" => "content",
+        "title" => "Content-databas | Objektorienterad PHP",
+    ],
 ];

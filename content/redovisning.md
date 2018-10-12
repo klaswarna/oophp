@@ -97,7 +97,28 @@ Dagens til: hur man kan logga in på studentservern med ”dbwebb login” som b
 Kmom06
 -------------------------
 
-Här är redovisningstexten
+Hur gick det att jobba med klassen för filtrering och formatting av texten?
+
+Det gick rätt bra (förutom det där felmeddelandet för markdown, som gick att trixa bort). Men det mesta var ju bara att sno och skriva av.
+
+Berätta om din klasstruktur och kodstruktur för din lösning av webbsidor med innehåll i databasen.
+
+Jag använde mig av ContentController såsom påbörjades på föreläsningen och byggde vidare på det. Föreläsningen sista kursmomentet var väldigt tydlig och pedagogisk.
+
+Hur känner du rent allmänt för den koden du skrivit i din me/redovisa, vad är bra och mindre bra? Ser du potential till refactoring av din kod och/eller behov av stöd från ramverket?
+
+Nja, den egna koden är hittills inget vidare och den kunde definitivt förbättrats, särskilt före kmom06. Jag har haft massa fulkod, både i själva vyerna och i routerna, som med fördel borde skrivits i klasser i stället. Men det har varit svårt att veta hur och vad som skall kapslas in. I mitt första försök av tärningsspelet gjorde jag ALLT i klasser, så det enda som gjordes i routern var att samla in en post-variabel och i vyn anropa en metod uppdateraSpelplan(), men det blev inte heller bra p.g.a. för mycket cyklisk komplexitet i en av klasserna enligt valideringsprogrammen.
+
+Det handlar väl om att titta på exempel och tips, triala och errora en massa på egen hand för att så småningom få en känsla för vad som skall läggas i klasser och hur i lagom portioner.
+
+Gällande stöd från ramverket är det förmodligen så, att när man provat en däri inbyggd funktion en gång, kommer man alltid att använda den därefter, men det är svår i början att veta vad man alls skulle kunna göra bättre innan man har koll på användbara funktioner. Det är trots befintlig dokumentation svår att greppa i förväg. Det är också rörigt att ha koll på vad alla olika typer av filer ligger i ramverket. Men precis som med express och node som blir mer och mer överblickbart ju fler gånger man använt det, lär det väl bli så även med anax och php så småningom.
+
+I det sista kursmomentet försökte jag använda klasser och funktioner men gjorde ful-php i edit-formulärens filter-val, som jag vet med fördel relativt enkelt kunde gjorts med en array eller nåt objekt, men ibland blir det för mycket att både ha en relativ komplex funktionalitet i kursmomentet och snygg kod på kort tid. Då måste man prioritera det förra.
+
+Vilken är din TIL för detta kmom?
+
+Jag känner att jag börjar få en mental bild av hur man kan använda klasser genom att injecta ett annat objekt. Jag tror det är början på att kunna tänka generellt objektorienterat på ett rationellt sätt. Annars blir det för krångligt.
+
 
 
 
